@@ -4,7 +4,7 @@ import { Direction } from "../../model/direction";
 export const SurfaceElement: React.FC = () => (
   <div className="surface-elem">
     <img
-      src={require("./mars-surface.jpeg")}
+      src={require("./mars-surface.jpeg").default}
       alt="Mars surface"
       className="img-surface"
     />
@@ -14,7 +14,7 @@ export const SurfaceElement: React.FC = () => (
 export const RockElement: React.FC = () => (
   <div className="surface-elem">
     <img
-      src={require("./mars-rock.jpg")}
+      src={require("./mars-rock.jpg").default}
       alt="A rock representing an obstacle"
       className="img-surface"
     />
@@ -36,7 +36,7 @@ export function RoverElement(props: RoverElementProps) {
   return (
     <div className="surface-elem">
       <img
-        src={require("./walle.jpg")}
+        src={require("./walle.jpg").default}
         style={{ transform: `rotate(${rotation})` }}
         alt="The Mars Rover"
         className="img-surface"
@@ -48,7 +48,7 @@ export function RoverElement(props: RoverElementProps) {
 export const TargetElement: React.FC = () => (
   <div className="surface-elem">
     <img
-      src={require("./target.jpg")}
+      src={require("./target.jpg").default}
       alt="The target that should be reached by the rover"
       className="img-surface"
     />
